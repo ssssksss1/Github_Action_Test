@@ -4,6 +4,8 @@
 1. [yml 설정](#yml-setting)
 2. [github secret 설정](#github-secret-setting)
 
+---
+
 #### Yml Setting
 |번호|설명|
 |:---:|:---:|
@@ -37,3 +39,5 @@ jobs:
 |03|Name : USERNAME , Value : opc 혹은 ubuntu 혹은 본인이 설정해놓은 인스턴스 사용자명
 |04|Name : KEY , Value : .ppk 파일에 내용을 넣으면 되는데 -----BEGIN RSA PRIVATE KEY----- ~ -----END RSA PRIVATE KEY----- 까지 전부 복사해서 넣어주어야 한다.
 |05|Name : PORT , Value : 22 (ssh 포트가 다르다면 알아서 바꾸기)
+
+---
