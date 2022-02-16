@@ -9,7 +9,7 @@
 |:---:|:---:|
 |01|프로젝트에 .github/workflows/main.yml 파일 만들기|
 |02|아래와 같이 코드 작성하기|
-
+'''
 name: remote ssh command <br/>
 on: [push] <br/>
 jobs: <br/>
@@ -26,3 +26,4 @@ jobs: <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;port: ${{ secrets.PORT }} <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;script: | <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sudo mkdir /app <br/>       
+'''
