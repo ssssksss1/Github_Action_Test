@@ -8,7 +8,7 @@ ___
 1. [yml 설정](#yml 설정)
 2. [github secret 설정](#github secret 설정)
 
-### yml 설정
+### 1. yml 설정
 |번호|설명|
 |:---:|:---:|
 |01|프로젝트에 .github/workflows/main.yml 파일 만들기|
@@ -32,7 +32,8 @@ jobs:
           script: |
             sudo mkdir /app      
 ```
-### github secret 설정
+---
+### 2. github secret 설정
 |번호|설명|
 |:---:|:---:|
 |01|프로젝트 저장소 - Settings - Secrets - Actions - New repository secret|
