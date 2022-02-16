@@ -13,7 +13,7 @@
 name: remote ssh command <br/>
 on: [push] <br/>
 jobs: <br/>
-(    )build: <br/>
+\tbuild: <br/>
     name: Build <br/>
     runs-on: ubuntu-latest <br/>
     steps: <br/>
