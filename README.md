@@ -29,7 +29,7 @@ jobs:
             sudo mkdir /app      
 ```
 ---
-#2. #Github Secret Setting
+2. #Github Secret Setting
 |번호|설명|
 |:---:|:---:|
 |01|프로젝트 저장소 - Settings - Secrets - Actions - New repository secret|
