@@ -1,5 +1,8 @@
 # 깃허브 액션을 이용하여 PUSH하였을 떄 클라우드 인스턴스에 SSH로 접속하여 폴더 생성하기
 
+* [x] 체크박스
+* [ ] 체크박스
+
 #### 순서
 1. [yml 설정](#yml-setting)
 2. [github secret 설정](#github-secret-setting)
