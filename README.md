@@ -1,10 +1,10 @@
 # 깃허브 액션을 이용하여 PUSH하였을 떄 클라우드 인스턴스에 SSH로 접속하여 폴더 생성하기
 
 #### 순서
-1. [yml 설정](#-yml-설정)
-2. [github secret 설정](#-github-secret-설정)
+1. [yml 설정](#yml-설정)
+2. [github secret 설정](#github-secret-설정)
 
-#1. yml 설정
+#1. Yml 설정
 |번호|설명|
 |:---:|:---:|
 |01|프로젝트에 .github/workflows/main.yml 파일 만들기|
@@ -29,7 +29,7 @@ jobs:
             sudo mkdir /app      
 ```
 ---
-#2. github secret 설정
+#2. gGithub Secret 설정
 |번호|설명|
 |:---:|:---:|
 |01|프로젝트 저장소 - Settings - Secrets - Actions - New repository secret|
