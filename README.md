@@ -13,10 +13,10 @@
 name: remote ssh command <br/>
 on: [push] <br/>
 jobs: <br/>
-\tbuild: <br/>
-    name: Build <br/>
-    runs-on: ubuntu-latest <br/>
-    steps: <br/>
+    build: <br/>
+        name: Build <br/>
+        runs-on: ubuntu-latest <br/>
+        steps: <br/>
       - name: executing remote ssh commands using password <br/>
         uses: appleboy/ssh-action@master <br/>
         with: <br/>
