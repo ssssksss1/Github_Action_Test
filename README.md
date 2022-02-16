@@ -11,20 +11,20 @@
 |02|아래와 같이 코드 작성하기|
 
 ```
-name: remote ssh command <br/>
-on: [push] <br/>
-jobs: <br/>
-&nbsp;build: <br/>
-&nbsp;&nbsp;name: Build <br/>
-&nbsp;&nbsp;runs-on: ubuntu-latest <br/>
-&nbsp;&nbsp;steps: <br/>
-&nbsp;&nbsp;&nbsp;- name: executing remote ssh commands using password <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;uses: appleboy/ssh-action@master <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;with: <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;host: ${{ secrets.HOST }} <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;username: ${{ secrets.USERNAME }} <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: ${{ secrets.KEY }} <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;port: ${{ secrets.PORT }} <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;script: | <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sudo mkdir /app <br/>       
+name: remote ssh command
+on: [push]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            sudo mkdir /app      
 ```
