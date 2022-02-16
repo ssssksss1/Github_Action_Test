@@ -4,7 +4,7 @@
 1. [yml 설정](#yml-setting)
 2. [github secret 설정](#github-secret-setting)
 
-#1. Yml Setting
+1. #Yml Setting
 |번호|설명|
 |:---:|:---:|
 |01|프로젝트에 .github/workflows/main.yml 파일 만들기|
@@ -29,7 +29,7 @@ jobs:
             sudo mkdir /app      
 ```
 ---
-#2. Github Secret Setting
+#2. #Github Secret Setting
 |번호|설명|
 |:---:|:---:|
 |01|프로젝트 저장소 - Settings - Secrets - Actions - New repository secret|
