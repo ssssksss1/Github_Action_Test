@@ -34,6 +34,5 @@ jobs:
 |01|프로젝트 저장소 - Settings - Secrets - Actions - New repository secret|
 |02|Name : HOST , Value : 공인IP주소
 |03|Name : USERNAME , Value : opc 혹은 ubuntu 혹은 본인이 설정해놓은 인스턴스 사용자명
-|04|Name : KEY , Value : .ppk 파일에 내용을 넣으면 되는데 -----BEGIN RSA PRIVATE KEY----- ~ -----END RSA PRIVATE KEY-----
- 까지 전부 복사해서 넣어주어야 한다.
+|04|Name : KEY , Value : .ppk 파일에 내용을 넣으면 되는데 -----BEGIN RSA PRIVATE KEY----- ~ -----END RSA PRIVATE KEY----- 까지 전부 복사해서 넣어주어야 한다.
 |05|Name : PORT , Value : 22 (ssh 포트가 다르다면 알아서 바꾸기)
