@@ -5,29 +5,24 @@
 2. [github secret 설정](#github secret 설정)
 
 ### yml 설정
-|Method|Endpoint|
+|번호|설명|
 |:---:|:---:|
-**<span style="color:orange">POST</span>**|`/auth/signup`|
-<br>
+|01|프로젝트에 .github/workflows/main.yml 파일 만들기|
+|02|아래와 같이 코드 작성하기|
+|name: remote ssh command|
+|on: [push]|
+|jobs:|
+|  build:|
+|    name: Build|
+|    runs-on: ubuntu-latest|
+|    steps:|
+|      - name: executing remote ssh commands using password|
+|        uses: appleboy/ssh-action@master|
+|        with:|
+|          host: ${{ secrets.HOST }}|
+|          username: ${{ secrets.USERNAME }}|
+|          key: ${{ secrets.KEY }}|
+|          port: ${{ secrets.PORT }}|
+|          script: ||
+|            sudo mkdir /app|
 
-**Request Header**
-|Header|Required|description|
-|:---:|:---:|:---:|
-|Content-Type| ✅ |application/json|
-<br>
-
-**Request Body**
-|Field|Required|Type|Description|
-|:---:|:---:|:---:|:---|
-|nickname|✅|String|소셜로그인한 계정일 경우 랜덤값으로 [root]@[임의의 해쉬값] 생성|
-|email|✅|String|id@domain으로 이루어졌는지 확인한다|
-|password|✅|String|8자 이상|
-<br>
-
-**Response Body**
-
-**1. `200` OK**
-|Field|Type|Description|
-|:---:|:---:|:---|
-|statusCode|number|200|
-|msg|string|Sign up Success|
