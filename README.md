@@ -13,17 +13,17 @@
 name: remote ssh command <br/>
 on: [push] <br/>
 jobs: <br/>
-    build: <br/>
-        name: Build <br/>
-        runs-on: ubuntu-latest <br/>
-        steps: <br/>
-      - name: executing remote ssh commands using password <br/>
-        uses: appleboy/ssh-action@master <br/>
-        with: <br/>
-          host: ${{ secrets.HOST }} <br/>
-          username: ${{ secrets.USERNAME }} <br/>
-          key: ${{ secrets.KEY }} <br/>
-          port: ${{ secrets.PORT }} <br/>
-          script: | <br/>
-            sudo mkdir /app <br/>
+&nbsp;build: <br/>
+&nbsp;&nbsp;name: Build <br/>
+&nbsp;&nbsp;runs-on: ubuntu-latest <br/>
+&nbsp;&nbsp;steps: <br/>
+&nbsp;&nbsp;&nbsp;- name: executing remote ssh commands using password <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;uses: appleboy/ssh-action@master <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;with: <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;host: ${{ secrets.HOST }} <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;username: ${{ secrets.USERNAME }} <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: ${{ secrets.KEY }} <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;port: ${{ secrets.PORT }} <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;script: | <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sudo mkdir /app <br/>
 |          
