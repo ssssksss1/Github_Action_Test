@@ -3,9 +3,8 @@
 #### 순서
 1. [yml 설정](#yml 설정)
 2. [github secret 설정](#github secret 설정)
-​
-### Auth
-#### 회원가입
+
+### yml 설정
 |Method|Endpoint|
 |:---:|:---:|
 **<span style="color:orange">POST</span>**|`/auth/signup`|
